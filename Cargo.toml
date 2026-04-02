@@ -12,8 +12,8 @@ keywords     = ["minecraft", "oxidized-mc"]
 categories   = ["game-development"]
 
 [dependencies]
-oxidized-nbt      = { git = "https://github.com/oxidized-mc/nbt.git" }
-oxidized-mc-types = { git = "https://github.com/oxidized-mc/mc-types.git" }
+oxidized-nbt      = { version = "0.1" }
+oxidized-mc-types = { version = "0.1" }
 serde             = { version = "1", features = ["derive"] }
 serde_json        = "1"
 
@@ -47,3 +47,9 @@ must_use_candidate         = "allow"
 cast_possible_truncation   = "allow"
 cast_sign_loss             = "allow"
 cast_possible_wrap         = "allow"
+
+[patch.crates-io]
+oxidized-nbt      = { path = "../nbt" }
+oxidized-mc-types = { path = "../mc-types" }
+oxidized-codec    = { path = "../codec" }
+oxidized-types    = { path = "../types" }
