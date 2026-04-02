@@ -12,6 +12,10 @@ keywords     = ["minecraft", "oxidized-mc"]
 categories   = ["game-development"]
 
 [dependencies]
+oxidized-nbt      = { git = "https://github.com/oxidized-mc/nbt.git" }
+oxidized-mc-types = { git = "https://github.com/oxidized-mc/mc-types.git" }
+serde             = { version = "1", features = ["derive"] }
+serde_json        = "1"
 
 [dev-dependencies]
 proptest = "1"
@@ -43,3 +47,16 @@ must_use_candidate         = "allow"
 cast_possible_truncation   = "allow"
 cast_sign_loss             = "allow"
 cast_possible_wrap         = "allow"
+
+# ── Local overrides (meta-repo development) ──────────────────────
+[patch."https://github.com/oxidized-mc/nbt.git"]
+oxidized-nbt = { path = "../nbt" }
+
+[patch."https://github.com/oxidized-mc/mc-types.git"]
+oxidized-mc-types = { path = "../mc-types" }
+
+[patch."https://github.com/oxidized-mc/codec.git"]
+oxidized-codec = { path = "../codec" }
+
+[patch."https://github.com/oxidized-mc/types.git"]
+oxidized-types = { path = "../types" }
