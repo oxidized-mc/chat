@@ -59,3 +59,4 @@ oxidized-codec = { path = "../codec" }
 
 [patch."https://github.com/oxidized-mc/types.git"]
 oxidized-types = { path = "../types" }
+
