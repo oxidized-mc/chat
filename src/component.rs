@@ -7,7 +7,7 @@
 //! - [`super::component_json`] — JSON (status/config packets)
 //! - [`super::component_nbt`] — NBT (play-state packets)
 //!
-//! See ADR-028 (Chat Components) for design rationale.
+//! Designed as a recursive tree of styled text nodes matching vanilla's chat/text system.
 
 use std::fmt;
 

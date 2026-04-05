@@ -13,7 +13,7 @@ use super::component::{Component, ComponentContent, NbtSource};
 use super::style::Style;
 use oxidized_mc_types::ResourceLocation;
 
-// ── JSON Serialization (manual per ADR-028) ──────────────────────────
+// ── JSON Serialization (manual impl for vanilla-compatible output) ────
 
 impl Serialize for Component {
     fn serialize<S: Serializer>(&self, s: S) -> Result<S::Ok, S::Error> {
