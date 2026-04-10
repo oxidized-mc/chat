@@ -15,7 +15,7 @@ categories   = ["game-development"]
 
 [dependencies]
 oxidized-nbt         = "0.1.0-dev"
-oxidized-mc-types    = "0.1.0-dev"
+oxidized-mc-types    = "0.2"
 serde             = { version = "1", features = ["derive"] }
 serde_json        = "1"
 
@@ -49,9 +49,3 @@ must_use_candidate         = "allow"
 cast_possible_truncation   = "allow"
 cast_sign_loss             = "allow"
 cast_possible_wrap         = "allow"
-
-[patch.crates-io]
-oxidized-codec = { path = "../codec" }
-oxidized-mc-types = { path = "../mc-types" }
-oxidized-nbt = { path = "../nbt" }
-oxidized-types = { path = "../types" }
