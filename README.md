@@ -2,6 +2,7 @@
 
 [![CI](https://github.com/oxidized-mc/chat/actions/workflows/ci.yml/badge.svg)](https://github.com/oxidized-mc/chat/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Crates.io](https://img.shields.io/crates/v/oxidized-chat.svg)](https://crates.io/crates/oxidized-chat)
 
 Minecraft chat component system — Component tree, Style, ChatFormatting, TextColor, JSON/NBT serialization
 
